@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Ticket Booking</h1>
+    <div class="movie-selection">
+      <label for="movie">Please Select Your Movie:</label>
+      <select id="movie">
+        <option value="Select Movies">Select Movies</option>
+        <option value="Top Gun: Maverick ($15)" data-price="15">Top Gun: Maverick ($15)</option>
+        <option value="No Time to die ($20)" data-price="20">No Time to die ($20)</option>
+        <option value="The Lion King($10)" data-price="10">The Lion King($10)</option>
+        <option value="Mission impossible 5 ($12)" data-price="12">Mission impossible 5 ($12)</option>
+        <option value="Jumanji ($15)" data-price="15">Jumanji ($15)</option>
+      </select>
+      <div class="availability">
+        <p>Available: <span id="available">0</span></p>
+        <p>Selected: <span id="selected">0</span></p>
+        <p>Occupied: <span id="occupied">0</span></p>
+      </div>
+    </div>
+    <div class="theatre">
+      <iframe width="360" height="190" src="https://www.youtube.com/embed/jVSMCwVGI1k" frameborder="0" allowfullscreen></iframe>
+
+
+      <div class="seats">
+      </div>
+    </div>
+    <div class="confirmation">
+      <p id="confirmation-message"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

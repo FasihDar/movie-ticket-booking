@@ -1,0 +1,84 @@
+body {
+    background-color: #708090;
+    color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; 
+    margin: 0 auto;
+    padding: 10px; 
+    text-align: center;
+}
+
+.movie-selection {
+    margin-bottom: 10px;
+}
+
+#movie {
+    border-radius: 5px;
+    height: 25px;
+    width: 100%; 
+    max-width: 300px; 
+}
+
+.availability {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.availability p {
+    margin: 0 5px;
+}
+
+.theatre {
+    margin-bottom: 20px;
+}
+
+#video {
+    border-radius: 7px;
+    width: 100%; 
+    height: auto; 
+}
+
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+.seat {
+    width: 18px;
+    height: 18px;
+    margin: 3px; 
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+
+.seat.available {
+    background-color: #696969;
+}
+
+.seat.selected {
+    background-color: #00FFFF;
+}
+
+.seat.occupied {
+    background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 5px;
+        }
+
+    .seats {
+        max-width: 280px; 
+    }
+}
